@@ -17,7 +17,7 @@ The player wins when all non-bomb tiles are cleared.
 
 ## 4. What not to overlook?
 
-- _winner?_ and _loser?_ are, in our options, some really nice functions.
+- _winner?_ and _loser?_ are, in our opinions, some really nice functions.
 - Once the player clicks a tile without adjacent bombs, the adjacent tiles are cleared automatically. It was not easy to implement this functionallity.
 - The hyper-fancy and ultra-modern animated GIF explosion once the player clicks on a bomb.
 
