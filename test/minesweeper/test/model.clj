@@ -66,7 +66,7 @@
 
 (deftest new-state-test
   (testing "Check if the state that is returned from new-state is as expected"
-     (is (= (new-state 0 0 td/board-2by2-clear-0by0) td/board-2by2-cleared-0by0))
-     (is (= (new-state 0 1 td/board-2by2-clear-0by1) td/board-2by2-cleared-0by1))
-     (is (= (new-state 1 0 td/board-2by2-clear-1by0-already-cleared) 
+     (is (= (new-state "b0000" 0 0 td/board-2by2-clear-0by0) td/board-2by2-cleared-0by0))
+     (is (= (new-state "b0001" 0 1 td/board-2by2-clear-0by1) td/board-2by2-cleared-0by1))
+     (is (= (new-state "b0100" 1 0 td/board-2by2-clear-1by0-already-cleared) 
             td/board-2by2-clear-1by0-already-cleared))))

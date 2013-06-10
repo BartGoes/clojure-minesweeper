@@ -120,38 +120,38 @@
 ;;new-state tests
 (def board-2by2-clear-0by0
   {:board 
-  [[{:bomb false, :bomb-count 0, :flagged false, :cleared false} 
-    {:bomb false, :bomb-count 0, :flagged false, :cleared false}] 
-    [{:bomb false, :bomb-count 0, :flagged false, :cleared false} 
-    {:bomb false, :bomb-count 0, :flagged false, :cleared false} ]]})
+  [[{:bomb false, :bomb-count 1, :flagged false, :cleared false} 
+    {:bomb false, :bomb-count 1, :flagged false, :cleared false}] 
+    [{:bomb false, :bomb-count 1, :flagged false, :cleared false} 
+    {:bomb false, :bomb-count 1, :flagged false, :cleared false} ]]})
 
 (def board-2by2-cleared-0by0
   {:board 
   [[{:bomb false, :bomb-count 0, :flagged false, :cleared true} 
-    {:bomb false, :bomb-count 0, :flagged false, :cleared false}] 
-    [{:bomb false, :bomb-count 0, :flagged false, :cleared false} 
-    {:bomb false, :bomb-count 0, :flagged false, :cleared false} ]]})
+    {:bomb false, :bomb-count 0, :flagged false, :cleared true}] 
+    [{:bomb false, :bomb-count 0, :flagged false, :cleared true} 
+    {:bomb false, :bomb-count 0, :flagged false, :cleared true} ]]})
 
 (def board-2by2-clear-0by1
   {:board
-  [[{:bomb false, :bomb-count 0, :flagged false, :cleared false} 
-    {:bomb false, :bomb-count 0, :flagged false, :cleared false}] 
-    [{:bomb false, :bomb-count 0, :flagged false, :cleared false} 
-    {:bomb false, :bomb-count 0, :flagged false, :cleared false} ]]})
+  [[{:bomb false, :bomb-count 0, :flagged false, :cleared true} 
+    {:bomb false, :bomb-count 0, :flagged false, :cleared true}] 
+    [{:bomb false, :bomb-count 0, :flagged false, :cleared true} 
+    {:bomb false, :bomb-count 0, :flagged false, :cleared true} ]]})
 
 (def board-2by2-cleared-0by1
   {:board 
-  [[{:bomb false, :bomb-count 0, :flagged false, :cleared false} 
+  [[{:bomb false, :bomb-count 0, :flagged false, :cleared true} 
     {:bomb false, :bomb-count 0, :flagged false, :cleared true}] 
-    [{:bomb false, :bomb-count 0, :flagged false, :cleared false} 
-    {:bomb false, :bomb-count 0, :flagged false, :cleared false} ]]})
+    [{:bomb false, :bomb-count 0, :flagged false, :cleared true} 
+    {:bomb false, :bomb-count 0, :flagged false, :cleared true} ]]})
 
 (def board-2by2-clear-1by0-already-cleared
   {:board 
-  [[{:bomb false, :bomb-count 0, :flagged false, :cleared false} 
-    {:bomb false, :bomb-count 0, :flagged false, :cleared false}] 
+  [[{:bomb false, :bomb-count 0, :flagged false, :cleared true} 
+    {:bomb false, :bomb-count 0, :flagged false, :cleared true}] 
     [{:bomb false, :bomb-count 0, :flagged false, :cleared true} 
-    {:bomb false, :bomb-count 0, :flagged false, :cleared false} ]]})
+    {:bomb false, :bomb-count 0, :flagged false, :cleared true} ]]})
 
 ;;bombs around test
 ;;(0 2 B 3 1)

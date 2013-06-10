@@ -9,11 +9,10 @@
   (view/play-screen))
 
 (defn turn-page [button-pressed]
-  (println button-pressed)
   (let [button-id (name (first (keys button-pressed)))
         rownr (Integer/parseInt (str (nth button-id 1) (nth button-id 2)))
         colnr (Integer/parseInt (str (nth button-id 3) (nth button-id 4)))]
-    (model/play! rownr colnr)
+    (model/play! button-id rownr colnr)
     (cond
       (model/loser?) (view/loser-screen)
       (model/winner?) (view/winner-screen)
